@@ -1,0 +1,100 @@
+1. Tell me about Yourself ?
+
+Hi Suraj, I am Satya currently working as a Devops Lead in Medplus Health services Pvt Ltd. I started my career in this company. I have around 9 years of experience in DevOps and infrastructure engineering, including around 6 years of experience working with AWS cloud environments.
+
+My experience covers both cloud and on-premise environments. On the AWS side, I have worked with services such as EC2, VPC, IAM, S3, RDS, EKS, ECR, ALB and CloudWatch. I have also worked with Terraform for infrastructure automation and have experience with containerization and Kubernetes.
+
+On the DevOps side, my core experience includes Linux, Docker, Kubernetes, Jenkins, GitHub, Ansible, Terraform, Prometheus, Grafana, AlertManager and Nagios. I have been involved in CI/CD, application deployments, infrastructure automation, monitoring, production support, troubleshooting and Kubernetes operations.
+
+One of my strengths is that I understand infrastructure end-to-end — from networking and compute to containers, Kubernetes, databases, CI/CD, monitoring, and application deployment. This helps me troubleshoot issues across different layers rather than looking at them in isolation.
+
+Currently, I'm looking for a role where I can use my experience across AWS, Kubernetes, DevOps and infrastructure automation While taking more ownership of cloud and platform engineering initiatives.
+
+
+2. Day-to-Day Activities as a DevOps Engineer in Your Organization?
+
+My role encompasses engineering, automation, operations, incident management, and technical leadership. As a Senior DevOps Engineer, my day-to-day responsibilities span infrastructure management, CI/CD, deployments, production support, troubleshooting, and team coordination.
+
+I typically start my day by reviewing Slack messages, emails, monitoring dashboards, and any alerts or incidents from the previous shift or overnight. I pay special attention to CPU and memory utilization, infrastructure health, failed deployments, application availability, and other resource-related alerts.
+
+Next, we have our daily stand-up, where we discuss ongoing Jira tickets, blockers, priorities, and high-priority activities planned for the day.
+
+After the stand-up, I focus on my assigned Jira tickets, which may involve various DevOps tasks. For example, I might provision or modify AWS infrastructure using Terraform, or manage infrastructure and deployments in our on-premises Dev and QA environments through our internal automation framework.
+
+I also manage and maintain our Jenkins CI/CD pipelines, support application releases, and handle microservice deployments into Kubernetes/EKS environments. This includes troubleshooting pipeline failures, resolving deployment issues, addressing configuration problems, and fixing environment-related issues.
+
+As a Senior DevOps Engineer, my responsibilities extend beyond planned Jira tasks. I also handle unplanned production incidents and urgent issues based on priority. For instance, if there's a failed production deployment, an application availability issue, an infrastructure problem, or a resource-related incident, I investigate the issue, identify the root cause, implement the necessary fix, and—where required—prepare a Root Cause Analysis (RCA) to prevent recurrence.
+
+I regularly collaborate with development and QA teams on activities such as onboarding new applications or services, deployment planning, environment setup, release coordination, and troubleshooting. These discussions also cover infrastructure optimization and cost reduction strategies.
+
+In my senior role, I also provide technical guidance to other team members. I help them troubleshoot Jira tasks, resolve infrastructure or deployment issues, review their approaches when needed, and ensure tasks are completed within expected timelines.
+
+Overall, my day-to-day role extends far beyond infrastructure maintenance. I'm involved across the entire DevOps lifecycle—infrastructure, automation, CI/CD, deployments, Kubernetes, monitoring, incident management, troubleshooting, and team coordination.
+
+---
+
+2. Can You Give Details About Your Current Project?
+
+I currently work on the MedPlus Health Services applications, an internal project for our organization. It is a large-scale application landscape comprising Java, Python, and Node.js applications, including microservices-based architectures.
+
+I am primarily responsible for the DevOps and infrastructure aspects of the project across multiple environments—Dev, QA, Staging, and Production.
+
+Our Dev and QA environments run on on-premises infrastructure. Application servers are hosted on local VMs, and microservices are deployed on a self-managed Kubernetes cluster running on bare-metal servers.
+
+For CI/CD, we use Jenkins. Developers commit code to our Git repositories, and Jenkins handles the build, unit testing, and packaging stages. Application artifacts are stored in Nexus Repository. For microservices, we also build container images and push them to the appropriate container registry.
+
+For Dev and QA deployments, we use an internal deployment automation framework. Development and QA teams can leverage this framework to deploy the required application versions into their respective environments. This approach helps us standardize deployments and minimize manual intervention.
+
+Our Staging and Production environments are hosted on AWS, with infrastructure provisioned and managed using Terraform. We utilize services such as VPC, EC2, EKS, ECR, ALB, RDS, EBS, S3, and IAM, depending on each application's requirements.
+
+We run both traditional applications on EC2 and microservices on EKS. EC2 hosts Java, Python, and Node.js workloads, while containerized microservices are deployed into EKS clusters. Jenkins drives the CI/CD pipeline for both Staging and Production environments.
+
+From an operational standpoint, I handle deployment support, infrastructure troubleshooting, application availability, and environment-related tasks. For our on-premises environments, we use scripts to collect and centralize application logs, enabling development and QA teams to troubleshoot issues efficiently.
+
+Overall, my role covers the complete DevOps lifecycle—infrastructure provisioning with Terraform, CI/CD using Jenkins, artifact management with Nexus, Kubernetes administration, AWS infrastructure management, application deployments, and production support.
+
+---
+
+3. Which Company Are You Working For? Product-Based or Service-Based?
+
+I work directly for MedPlus Health Services, a healthcare organization. I am part of the internal IT/engineering team, serving as a DevOps Engineer. We develop and operate applications that support the organization's business and healthcare operations.
+
+It is a product-based (in-house) setup.
+
+4. Tell me what is the latest jenkins job you have created and why ?
+
+The latest Jenkins job I created was for automating the build and deployment of a web application. The source code was maintained in GitHub. Jenkins was configured with a webhook so that whenever developers pushed code or created a pull request, Jenkins triggered the pipeline. The pipeline checked out the required branch, built the application, ran tests and SonarQube quality checks, created the artifact, and then deployed it using Ansible to the target environment.
+
+
+5. can you go through the pipeline ?
+GitHub
+   ↓
+Jenkins
+   ↓
+Checkout
+   ↓
+Build
+   ↓
+Unit/Validation Tests
+   ↓
+SonarQube Quality Gate
+   ↓
+Artifact / Docker Image
+   ↓
+Nexus / Registry
+   ↓
+Ansible Deployment
+   ↓
+Tomcat / Kubernetes
+   ↓
+Monitoring
+
+
+6. Why Jenkins instead of GitLab CI or Github Actions ?
+Jenkins was already part of the organization's CI/CD platform and we had existing Jenkins agents, credentials, plugins, and deployment automation. So we continued using Jenkins for CI/CD rather than introducing another CI platform.
+
+7. Reason for Job switch ?
+I’ve had a good experience in my current organization and have gained strong experience in DevOps, infrastructure, Kubernetes, and AWS. At this stage of my career, I’m looking for a new opportunity where I can take on more challenging responsibilities, work on larger and more complex environments, and expand my exposure to cloud, automation, and platform engineering.
+
+I’m looking for a role that gives me opportunities to solve new technical challenges, take more ownership, and continue growing professionally while contributing my existing experience to the organization.
+
